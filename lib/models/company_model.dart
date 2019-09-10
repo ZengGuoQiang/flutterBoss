@@ -1,13 +1,14 @@
-import 'package:flutter/material.dart';
+class Company {
+  final String id;
+  final String inc;
+  final List companyImgsResult;
 
-enum CompanyModel{
-  id,
-  company,
-  info,
-  hot,
-  logo
-}
+  Company({this.id, this.inc, this.companyImgsResult});
 
-class _CompanyModel{
-  
+  factory Company.fromJson(Map<String, dynamic> json) {
+    return Company(
+        id: json['id'],
+        inc: json['inc'],
+        companyImgsResult: json['companyImgsResult'] as List);
+  }
 }
