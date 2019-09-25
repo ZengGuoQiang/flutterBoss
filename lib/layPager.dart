@@ -111,6 +111,9 @@ class _MainPager extends State<MainPager> {
       case BottomBar.user:
         return UserPage();
         break;
+      case BottomBar.companyDetail:
+        return UserPage();
+        break;
     }
   }
 

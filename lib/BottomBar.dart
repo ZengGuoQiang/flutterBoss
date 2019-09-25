@@ -8,7 +8,8 @@ enum BottomBar{
   home,
   company,
   job,
-  user
+  user,
+  companyDetail
 }
 
 String barName(BottomBar bottomBar){
@@ -21,6 +22,8 @@ String barName(BottomBar bottomBar){
       return '工作';
     case BottomBar.user:
       return '用户';
+    case BottomBar.companyDetail:
+      return '公司详情';
     default:
       return '';
   }
